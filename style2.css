@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+/* i{
+    border: 2px soid red;
+    position: relative;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+} */
+
+.main {
+    background: url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1450px, 100vw);
+    height: 90vh;
+    position: relative;
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    width: 78vw;
+    height: 100px;
+    margin: auto;
+    /* border: 5px solid pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    /* padding: 0 30px; */
+}
+
+img {
+    margin-left: 12px;
+    width: 150px;
+    /* height: px; */
+}
+
+.top-lang-signIn {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* margin-right: 4px; */
+    /* height: 31px;
+    width: 68px; */
+    border-radius: 4px;
+    color: white;
+    margin-right: px;
+}
+
+.top-lang-signIn select option {
+    background-color: white;
+    color: black;
+}
+
+.top-lang-signIn .border {
+    border-radius: 4px;
+}
+
+.lang {
+    /* display: inline-block; */
+    color: white;
+    padding-left: 22px;
+    width: 95px;
+    height: 31px;
+    border: 1px solid white;
+    background-color: rgba(23, 23, 23, 0.7);
+    margin-right: 15px;
+
+}
+
+.signin {
+    color: white;
+    background-color: red;
+    height: 31px;
+    width: 68px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.text {
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 3;
+    gap: 21px;
+}
+
+.text> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.text> :nth-child(2) {
+    font-size: 27px;
+    text-align: center;
+}
+
+.text> :nth-child(3) {
+    font-size: 21px;
+    text-align: center;
+}
+
+.getstarted {
+    width: 39vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.getstarted .begin {
+    height: 55px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.getstarted input {
+    width: 360px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(207, 195, 195, 0.808);
+    color: white;
+    padding-left: 14px;
+}
+
+.getstarted .start {
+    width: 214px;
+    background-color: #e50914;
+    color: white;
+    font-weight: 550;
+    font-size: 25px;
+    height: 57px;
+}
+
+.separation {
+    background-size: max(1450px, 100vw);
+    height: 9px;
+    background-color: grey;
+    position: relative;
+    z-index: 2;
+    /*
+     border: 2px solid black; */
+}
+
+/* //2nd slide  */
+
+.first {
+    background-size: max(1450px, 100vw);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+
+.first-box {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.first .first-box .enjoy {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.first .enjoy>:nth-child(1) {
+    font-size: 50px;
+    font-weight: bolder;
+    padding-bottom: 12px;
+}
+
+.secImg video {
+    position: absolute;
+    top: 158px;
+    height: 246px;
+    width: 836px;
+    right: 27px;
+    z-index: -1;
+}
+
+.first .first-box img {
+    /* display: inline-block; */
+    right: 251px;
+    top: 50px;
+    height: 454px;
+    width: 603px;
+    margin-left: 65px;
+}
+
+
+#thirdslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+
+.second-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-box img {
+    height: 510px;
+    width: 561px;
+}
+
+.second-box span {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+}
+
+.second-box span:first-child {
+    font-size: 50px;
+    font-weight: bolder;
+    /* width: 676px; */
+}
+
+.second-box span:nth-child(2) {
+    font-size: 50px;
+    font-weight: bolder;
+    /* width: 676px; */
+}
+
+
+#fourthslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third span {
+    color: white;
+}
+
+.third-box span {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+
+}
+
+.third-box span:first-child {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.third-box video {
+    top: 143px;
+    height: 278px;
+    width: 823px;
+    right: 37px;
+}
+
+.fourth-box span {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: white;
+}
+
+.fourth-box span:first-child {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.fifth {
+    background-size: max(1450px, 100vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 80vh; */
+}
+
+.fifth h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 58px;
+    margin-bottom: 28px;
+}
+
+/* fifth slide starts */
+.fifth .faq-ques {
+    width: 80vw;
+    margin: auto;
+    color: white;
+    /* border: 2px solid red; */
+}
+
+.fifth .faq-ques .boxes {
+    /* border: 2px solid pink; */
+    display: flex;
+    align-items: center;
+    height: 82px;
+    margin: 8px;
+    background-color: #2d2d2d;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.fifth .faq-ques .boxes:first-child {
+    margin-top: 0;
+}
+
+.fifth .faq-ques .boxes:last-child {
+    margin-bottom: 0;
+}
+
+.fifth span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.last-btn {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.last-btn .mail {
+    margin-right: 6px;
+}
+
+/* last slide  */
+
+.sixth {
+    background-size: max(1450px, 100vw);;
+    height: 60vh;
+    color: rgb(195, 188, 188);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sixth div a {
+    color: rgb(195, 188, 188);
+}
+
+.sixth .end-boxes {
+    width: 76vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sixth .question {
+    width: 76vw;
+    margin: auto;
+    margin-top: 78px;
+    margin-bottom: 22px;
+}
+
+.sixth .end-boxes .end-item {
+    /* border: 2px solid pink; */
+    height: 57px;
+    display: flex;
+    align-items: center;
+}
+
+.sixth .end-lang {
+    width: 76vw;
+    margin: auto;
+    margin-top: 22px;
+
+}
+
+.sixth select {
+    border-radius: 4px;
+    border-color: rgb(195, 188, 188);
+}
+
+.sixth select option {
+    /* background-color: #e50914; */
+    color: black;
+
+
+}
+
+.sixth .netflix-india {
+    /* width: 76vw; */
+    display: inline-block;
+    margin-left: 172px;
+    margin-top: 22px;
+    color: rgb(195, 188, 188);
+}
+
+.netflix-india:hover {
+    cursor: text
+}
+
+/* insertion of a new div */
+
+.new-box{
+    height: 96px;
+    width: calc(100% - 20px);
+    margin: auto;
+    background-color: aqua;
+}
